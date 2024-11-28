@@ -5,7 +5,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import ChatBox from "./ChatBox";
 // AIzaSyBC1bIVZN80zo7JbsEDNE6o6_KKTrYobHU
 const Main = () => {
-  const API_KEY = "AIzaSyBC1bIVZN80zo7JbsEDNE6o6_KKTrYobHU";
+  const API_KEY = "AIzaSyDNqTPQ5WKoIG-qB6n4QgVCO6BXC_fDOYo";
   const [searchText, setSearchText] = useState("");
   const [output, setSearchOutput] = useState("");
   // Access your API key (see "Set up your API key" above)
@@ -13,7 +13,7 @@ const Main = () => {
 
   async function run() {
     // For text-only input, use the gemini-pro model
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = searchText;
 
